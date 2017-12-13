@@ -46,3 +46,8 @@ D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\System.Spatial.dll
 D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.Edm.xml
 D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.OData.xml
 D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\System.Spatial.xml
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclass.resources
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmetc.resources
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmsubject.resources
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmcourse.resources
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmlvICT.resources

@@ -11,6 +11,8 @@
         Me.cbogender.Text = ""
         Me.txtaddress.Text = ""
         Me.txtphonenumber.Text = ""
+        Me.cboclass.Text = ""
+        Me.cbocourse.Text = ""
         Me.userimage.Image = Nothing
         Me.lbimage.Text = "No Image"
 
@@ -37,8 +39,22 @@
         studentlist.lvUser.Items(i).SubItems.Add(Me.txtdob.Text)
         studentlist.lvUser.Items(i).SubItems.Add(Me.txtaddress.Text)
         studentlist.lvUser.Items(i).SubItems.Add(Me.txtphonenumber.Text)
-        Call Clear()
+        studentlist.lvUser.Items(i).SubItems.Add(Me.cbocourse.Text)
+        studentlist.lvUser.Items(i).SubItems.Add(Me.cboclass.Text)
+        If Me.cbocourse.Text = "ICT" Then
+            Dim a As Integer = frmlvICT.lvICT.Items.Count
+            frmlvICT.lvICT.Items.Add(Me.txtstudentid.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.txtfname.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.txtlname.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.cbogender.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.txtdob.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.txtaddress.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.txtphonenumber.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.cbocourse.Text)
+            frmlvICT.lvICT.Items(a).SubItems.Add(Me.cboclass.Text)
+        End If
 
+        Call Clear()
     End Sub
 
     Private Sub btnclose_Click(sender As Object, e As EventArgs) Handles btnclose.Click

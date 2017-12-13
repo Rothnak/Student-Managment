@@ -103,6 +103,24 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmclass.Designer.vb">
+      <DependentUpon>frmclass.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmclass.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmetc.Designer.vb">
+      <DependentUpon>frmetc.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmetc.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmlvICT.Designer.vb">
+      <DependentUpon>frmlvICT.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmlvICT.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmMain.Designer.vb">
       <DependentUpon>frmMain.vb</DependentUpon>
     </Compile>
@@ -113,6 +131,18 @@
       <DependentUpon>frmStudentRigitster.vb</DependentUpon>
     </Compile>
     <Compile Include="frmStudentRigitster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmsubject.Designer.vb">
+      <DependentUpon>frmsubject.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmsubject.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmcourse.Designer.vb">
+      <DependentUpon>frmcourse.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmcourse.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -145,11 +175,26 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmclass.resx">
+      <DependentUpon>frmclass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmetc.resx">
+      <DependentUpon>frmetc.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmlvICT.resx">
+      <DependentUpon>frmlvICT.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmStudentRigitster.resx">
       <DependentUpon>frmStudentRigitster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmsubject.resx">
+      <DependentUpon>frmsubject.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmcourse.resx">
+      <DependentUpon>frmcourse.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

@@ -42,6 +42,8 @@ Partial Class studentlist
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.txtcurrentuser = New System.Windows.Forms.ToolStripTextBox()
+        Me.chcoruse = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chclass = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.st_Menu.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -53,13 +55,13 @@ Partial Class studentlist
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lvUser.BackColor = System.Drawing.Color.White
         Me.lvUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lvUser.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chaddress, Me.chphonenumber})
+        Me.lvUser.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chaddress, Me.chphonenumber, Me.chcoruse, Me.chclass})
         Me.lvUser.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvUser.ForeColor = System.Drawing.SystemColors.WindowText
         Me.lvUser.FullRowSelect = True
         Me.lvUser.Location = New System.Drawing.Point(38, 120)
         Me.lvUser.Name = "lvUser"
-        Me.lvUser.Size = New System.Drawing.Size(1192, 322)
+        Me.lvUser.Size = New System.Drawing.Size(1300, 322)
         Me.lvUser.TabIndex = 0
         Me.lvUser.UseCompatibleStateImageBehavior = False
         Me.lvUser.View = System.Windows.Forms.View.Details
@@ -196,6 +198,14 @@ Partial Class studentlist
         Me.txtcurrentuser.Name = "txtcurrentuser"
         Me.txtcurrentuser.Size = New System.Drawing.Size(100, 39)
         '
+        'chcoruse
+        '
+        Me.chcoruse.Text = "Course"
+        '
+        'chclass
+        '
+        Me.chclass.Text = "Class"
+        '
         'studentlist
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -236,4 +246,6 @@ Partial Class studentlist
     Friend WithEvents ToolStripButton6 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripTextBox1 As System.Windows.Forms.ToolStripTextBox
     Friend WithEvents txtcurrentuser As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents chcoruse As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chclass As System.Windows.Forms.ColumnHeader
 End Class

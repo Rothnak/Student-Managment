@@ -49,6 +49,11 @@ Partial Class frmStudentRigitster
         Me.txtcurrentuser = New System.Windows.Forms.ToolStripTextBox()
         Me.btnselect = New System.Windows.Forms.Button()
         Me.userimage = New System.Windows.Forms.PictureBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.cbocourse = New System.Windows.Forms.ComboBox()
+        Me.cboclass = New System.Windows.Forms.ComboBox()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.userimage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -184,8 +189,9 @@ Partial Class frmStudentRigitster
         '
         'btnsave
         '
+        Me.btnsave.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnsave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsave.Location = New System.Drawing.Point(431, 543)
+        Me.btnsave.Location = New System.Drawing.Point(431, 634)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(199, 52)
         Me.btnsave.TabIndex = 16
@@ -194,8 +200,9 @@ Partial Class frmStudentRigitster
         '
         'btnclose
         '
+        Me.btnclose.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnclose.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclose.Location = New System.Drawing.Point(849, 542)
+        Me.btnclose.Location = New System.Drawing.Point(849, 633)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(199, 53)
         Me.btnclose.TabIndex = 17
@@ -224,8 +231,9 @@ Partial Class frmStudentRigitster
         '
         'btnnew
         '
+        Me.btnnew.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnnew.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnnew.Location = New System.Drawing.Point(33, 543)
+        Me.btnnew.Location = New System.Drawing.Point(33, 634)
         Me.btnnew.Name = "btnnew"
         Me.btnnew.Size = New System.Drawing.Size(199, 52)
         Me.btnnew.TabIndex = 20
@@ -250,12 +258,13 @@ Partial Class frmStudentRigitster
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.Bottom
+        Me.ToolStrip1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripTextBox1, Me.txtcurrentuser})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 658)
+        Me.ToolStrip1.Location = New System.Drawing.Point(6, 742)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1097, 39)
+        Me.ToolStrip1.Size = New System.Drawing.Size(252, 39)
         Me.ToolStrip1.TabIndex = 22
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -305,12 +314,57 @@ Partial Class frmStudentRigitster
         Me.userimage.TabIndex = 13
         Me.userimage.TabStop = False
         '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(31, 557)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(91, 29)
+        Me.Label9.TabIndex = 23
+        Me.Label9.Text = "Course"
+        '
+        'cbocourse
+        '
+        Me.cbocourse.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbocourse.FormattingEnabled = True
+        Me.cbocourse.Items.AddRange(New Object() {"ICT", "Makarting", "Ari Conditioner", "Electric"})
+        Me.cbocourse.Location = New System.Drawing.Point(218, 549)
+        Me.cbocourse.Name = "cbocourse"
+        Me.cbocourse.Size = New System.Drawing.Size(241, 37)
+        Me.cbocourse.TabIndex = 24
+        '
+        'cboclass
+        '
+        Me.cboclass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboclass.FormattingEnabled = True
+        Me.cboclass.Items.AddRange(New Object() {"Morning", "Afternoon", "Evening"})
+        Me.cboclass.Location = New System.Drawing.Point(721, 549)
+        Me.cboclass.Name = "cboclass"
+        Me.cboclass.Size = New System.Drawing.Size(241, 37)
+        Me.cboclass.TabIndex = 26
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(534, 557)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(73, 29)
+        Me.Label10.TabIndex = 25
+        Me.Label10.Text = "Class"
+        '
         'frmStudentRigitster
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(1097, 697)
+        Me.ClientSize = New System.Drawing.Size(1137, 781)
+        Me.Controls.Add(Me.cboclass)
+        Me.Controls.Add(Me.Label10)
+        Me.Controls.Add(Me.cbocourse)
+        Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.lbimage)
         Me.Controls.Add(Me.btnnew)
@@ -371,4 +425,9 @@ Partial Class frmStudentRigitster
     Friend WithEvents ToolStripButton2 As System.Windows.Forms.ToolStripButton
     Friend WithEvents ToolStripTextBox1 As System.Windows.Forms.ToolStripTextBox
     Friend WithEvents txtcurrentuser As System.Windows.Forms.ToolStripTextBox
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents cbocourse As System.Windows.Forms.ComboBox
+    Friend WithEvents cboclass As System.Windows.Forms.ComboBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
 End Class

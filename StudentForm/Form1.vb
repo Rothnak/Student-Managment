@@ -69,13 +69,6 @@ Public Class Login
         End If
 
     End Sub
-
-    Private Sub btnconnect_Click(sender As Object, e As EventArgs) Handles btnconnect.Click
-        ConnecttoDB()
-
-
-    End Sub
-
     Private Sub btnlogin_KeyPress(sender As Object, e As KeyPressEventArgs) Handles btnlogin.KeyPress
 
     End Sub

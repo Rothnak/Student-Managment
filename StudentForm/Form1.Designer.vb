@@ -30,7 +30,6 @@ Partial Class Login
         Me.btnclose = New System.Windows.Forms.Button()
         Me.btnlogin = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnconnect = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -110,23 +109,12 @@ Partial Class Login
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
-        'btnconnect
-        '
-        Me.btnconnect.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnconnect.Location = New System.Drawing.Point(12, 345)
-        Me.btnconnect.Name = "btnconnect"
-        Me.btnconnect.Size = New System.Drawing.Size(156, 51)
-        Me.btnconnect.TabIndex = 8
-        Me.btnconnect.Text = "Connect"
-        Me.btnconnect.UseVisualStyleBackColor = True
-        '
         'Login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.LightSteelBlue
         Me.ClientSize = New System.Drawing.Size(656, 432)
-        Me.Controls.Add(Me.btnconnect)
         Me.Controls.Add(Me.btnlogin)
         Me.Controls.Add(Me.btnclose)
         Me.Controls.Add(Me.textpwd)
@@ -151,6 +139,5 @@ Partial Class Login
     Friend WithEvents textpwd As System.Windows.Forms.TextBox
     Friend WithEvents btnclose As System.Windows.Forms.Button
     Friend WithEvents btnlogin As System.Windows.Forms.Button
-    Friend WithEvents btnconnect As System.Windows.Forms.Button
 
 End Class

@@ -19,3 +19,7 @@ D:\RTC LESSON\Year3\Personal Application\VB Project\StudentForm\StudentForm\bin\
 D:\RTC LESSON\Year3\Personal Application\VB Project\StudentForm\StudentForm\bin\Debug\AForge.Video.xml
 D:\RTC LESSON\Year3\Personal Application\VB Project\StudentForm\StudentForm\bin\Debug\AForge.Video.DirectShow.xml
 D:\RTC LESSON\Year3\Personal Application\VB Project\StudentForm\StudentForm\obj\Debug\StudentForm.Camara.resources
+D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\StudentForm.exe.config
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.exe
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.xml
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.pdb

@@ -58,6 +58,10 @@
       <HintPath>..\packages\AForge.Video.DirectShow.2.2.5\lib\AForge.Video.DirectShow.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Scaffolding.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86" />
+    <Reference Include="Microsoft.AspNet.Scaffolding.EntityFramework.12.0, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=x86" />
+    <Reference Include="Microsoft.Data.Edm, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Data.OData, Version=5.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.9.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="PsdImaging.Interop, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <EmbedInteropTypes>True</EmbedInteropTypes>
@@ -217,6 +221,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\5ef8fdd84e730bb53d6195a4b5928fa51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_address-book-new_118906.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_bookcase_1228.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_building-01_1989016.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear-information-icon-070831--icons-etc-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3781.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_bookmarks_list_add_5968.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_attendance_list_45546.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

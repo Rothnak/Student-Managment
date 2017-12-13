@@ -1,6 +1,8 @@
 ﻿Public Class frmStudentRigitster
     Dim UrsImagePath As String
 
+    Private Property DateTimePicker As String
+
     Private Sub Clear()
         Me.txtstudentid.Text = studentlist.lvUser.Items.Count + 1
         Me.txtfname.Text = ""
@@ -55,6 +57,7 @@
     Private Sub frmStudentRigitster_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Clear()
         Me.txtcurrentuser.Text = UserLogin
+
     End Sub
 
     Private Sub txtcurrentuser_Click(sender As Object, e As EventArgs)
@@ -83,5 +86,9 @@
             Me.userimage.Image = Image.FromFile(lbimage.Text)
 
         End If
+    End Sub
+
+    Private Sub txtdob_TextChanged(sender As Object, e As EventArgs) Handles txtdob.TextChanged
+
     End Sub
 End Class

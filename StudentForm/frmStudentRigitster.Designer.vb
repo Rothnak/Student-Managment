@@ -44,9 +44,9 @@ Partial Class frmStudentRigitster
         Me.OpenFile = New System.Windows.Forms.OpenFileDialog()
         Me.lbimage = New System.Windows.Forms.Label()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
+        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.txtcurrentuser = New System.Windows.Forms.ToolStripTextBox()
-        Me.ToolStripButton2 = New System.Windows.Forms.ToolStripButton()
         Me.btnselect = New System.Windows.Forms.Button()
         Me.userimage = New System.Windows.Forms.PictureBox()
         Me.ToolStrip1.SuspendLayout()
@@ -259,6 +259,15 @@ Partial Class frmStudentRigitster
         Me.ToolStrip1.TabIndex = 22
         Me.ToolStrip1.Text = "ToolStrip1"
         '
+        'ToolStripButton2
+        '
+        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.ToolStripButton2.Image = Global.StudentForm.My.Resources.Resources.if_windows_2333413
+        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
+        Me.ToolStripButton2.Name = "ToolStripButton2"
+        Me.ToolStripButton2.Size = New System.Drawing.Size(36, 36)
+        Me.ToolStripButton2.Text = "ToolStripButton2"
+        '
         'ToolStripTextBox1
         '
         Me.ToolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None
@@ -273,15 +282,6 @@ Partial Class frmStudentRigitster
         Me.txtcurrentuser.Font = New System.Drawing.Font("Segoe UI", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtcurrentuser.Name = "txtcurrentuser"
         Me.txtcurrentuser.Size = New System.Drawing.Size(100, 39)
-        '
-        'ToolStripButton2
-        '
-        Me.ToolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.ToolStripButton2.Image = Global.StudentForm.My.Resources.Resources.if_windows_2333413
-        Me.ToolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.ToolStripButton2.Name = "ToolStripButton2"
-        Me.ToolStripButton2.Size = New System.Drawing.Size(36, 36)
-        Me.ToolStripButton2.Text = "ToolStripButton2"
         '
         'btnselect
         '

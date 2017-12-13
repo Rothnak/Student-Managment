@@ -15,11 +15,19 @@ StudentForm
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:StudentForm.My.Resources.Resources._3781">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:StudentForm.My.Resources.Resources._5ef8fdd84e730bb53d6195a4b5928fa5">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:StudentForm.My.Resources.Resources._5ef8fdd84e730bb53d6195a4b5928fa51">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.clear_information_icon_070831__icons_etc_30">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -35,7 +43,15 @@ StudentForm
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
+</member><member name="P:StudentForm.My.Resources.Resources.if_address_book_new_118906">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:StudentForm.My.Resources.Resources.if_application_2427692">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.if_attendance_list_45546">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -44,6 +60,18 @@ StudentForm
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:StudentForm.My.Resources.Resources.if_book_text_information_103411__1_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.if_bookcase_1228">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.if_bookmarks_list_add_5968">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.if_building_01_1989016">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

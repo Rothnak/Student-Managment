@@ -40,3 +40,9 @@ D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmStude
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.Resources.resources
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.studentlist.resources
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.vbproj.GenerateResource.Cache
+D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.Edm.dll
+D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.OData.dll
+D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\System.Spatial.dll
+D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.Edm.xml
+D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.OData.xml
+D:\Assigment\Vb.net\Student-Managment\StudentForm\bin\Debug\System.Spatial.xml

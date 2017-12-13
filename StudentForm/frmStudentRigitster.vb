@@ -53,6 +53,18 @@
             frmlvICT.lvICT.Items(a).SubItems.Add(Me.cbocourse.Text)
             frmlvICT.lvICT.Items(a).SubItems.Add(Me.cboclass.Text)
         End If
+        If Me.cboclass.Text = "Morning" Then
+            Dim b As Integer = frmclassmornig.lvclassmoring.Items.Count
+            frmclassmornig.lvclassmoring.Items.Add(Me.txtstudentid.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.txtfname.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.txtlname.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.cbogender.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.txtdob.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.txtaddress.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.txtphonenumber.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.cbocourse.Text)
+            frmclassmornig.lvclassmoring.Items(b).SubItems.Add(Me.cboclass.Text)
+        End If
 
         Call Clear()
     End Sub

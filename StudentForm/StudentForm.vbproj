@@ -109,6 +109,12 @@
     <Compile Include="frmclass.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmclassmornig.Designer.vb">
+      <DependentUpon>frmclassmornig.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmclassmornig.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmetc.Designer.vb">
       <DependentUpon>frmetc.vb</DependentUpon>
     </Compile>
@@ -177,6 +183,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmclass.resx">
       <DependentUpon>frmclass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclassmornig.resx">
+      <DependentUpon>frmclassmornig.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmetc.resx">
       <DependentUpon>frmetc.vb</DependentUpon>

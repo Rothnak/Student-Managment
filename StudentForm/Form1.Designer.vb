@@ -22,122 +22,92 @@ Partial Class Login
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Login))
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txtusername = New System.Windows.Forms.TextBox()
         Me.textpwd = New System.Windows.Forms.TextBox()
-        Me.btnclose = New System.Windows.Forms.Button()
         Me.btnlogin = New System.Windows.Forms.Button()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.btnclose = New System.Windows.Forms.Button()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 16.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(191, 59)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(374, 37)
-        Me.Label1.TabIndex = 1
-        Me.Label1.Text = "RTC Siem Reap School"
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(50, 193)
+        resources.ApplyResources(Me.Label2, "Label2")
+        Me.Label2.BackColor = System.Drawing.Color.Transparent
+        Me.Label2.CausesValidation = False
+        Me.Label2.ForeColor = System.Drawing.Color.Red
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(124, 29)
-        Me.Label2.TabIndex = 2
-        Me.Label2.Text = "Username"
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(54, 280)
+        resources.ApplyResources(Me.Label3, "Label3")
+        Me.Label3.BackColor = System.Drawing.Color.Transparent
+        Me.Label3.CausesValidation = False
+        Me.Label3.ForeColor = System.Drawing.Color.Red
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(120, 29)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Password"
         '
         'txtusername
         '
-        Me.txtusername.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtusername.Location = New System.Drawing.Point(238, 193)
+        resources.ApplyResources(Me.txtusername, "txtusername")
+        Me.txtusername.CausesValidation = False
         Me.txtusername.Name = "txtusername"
-        Me.txtusername.Size = New System.Drawing.Size(302, 35)
-        Me.txtusername.TabIndex = 4
         '
         'textpwd
         '
-        Me.textpwd.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.textpwd.Location = New System.Drawing.Point(238, 274)
+        resources.ApplyResources(Me.textpwd, "textpwd")
+        Me.textpwd.CausesValidation = False
         Me.textpwd.Name = "textpwd"
-        Me.textpwd.Size = New System.Drawing.Size(302, 35)
-        Me.textpwd.TabIndex = 5
-        '
-        'btnclose
-        '
-        Me.btnclose.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclose.Location = New System.Drawing.Point(422, 345)
-        Me.btnclose.Name = "btnclose"
-        Me.btnclose.Size = New System.Drawing.Size(118, 51)
-        Me.btnclose.TabIndex = 6
-        Me.btnclose.Text = "Close"
-        Me.btnclose.UseVisualStyleBackColor = True
         '
         'btnlogin
         '
-        Me.btnlogin.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnlogin.Location = New System.Drawing.Point(238, 345)
+        resources.ApplyResources(Me.btnlogin, "btnlogin")
+        Me.btnlogin.BackColor = System.Drawing.Color.Transparent
+        Me.btnlogin.CausesValidation = False
+        Me.btnlogin.ForeColor = System.Drawing.Color.DarkRed
         Me.btnlogin.Name = "btnlogin"
-        Me.btnlogin.Size = New System.Drawing.Size(118, 51)
-        Me.btnlogin.TabIndex = 7
-        Me.btnlogin.Text = "Login"
-        Me.btnlogin.UseVisualStyleBackColor = True
+        Me.btnlogin.UseVisualStyleBackColor = False
         '
-        'PictureBox1
+        'btnclose
         '
-        Me.PictureBox1.Image = Global.StudentForm.My.Resources.Resources.photo_2017_07_18_09_35_03
-        Me.PictureBox1.Location = New System.Drawing.Point(50, 26)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(124, 114)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
-        Me.PictureBox1.TabIndex = 0
-        Me.PictureBox1.TabStop = False
+        resources.ApplyResources(Me.btnclose, "btnclose")
+        Me.btnclose.BackColor = System.Drawing.Color.Transparent
+        Me.btnclose.CausesValidation = False
+        Me.btnclose.ForeColor = System.Drawing.Color.DarkRed
+        Me.btnclose.Name = "btnclose"
+        Me.btnclose.UseVisualStyleBackColor = False
         '
         'Login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
-        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.LightSteelBlue
-        Me.ClientSize = New System.Drawing.Size(656, 432)
+        Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
+        resources.ApplyResources(Me, "$this")
+        Me.AutoValidate = System.Windows.Forms.AutoValidate.Disable
+        Me.BackColor = System.Drawing.SystemColors.AppWorkspace
+        Me.BackgroundImage = Global.StudentForm.My.Resources.Resources._5ef8fdd84e730bb53d6195a4b5928fa5
+        Me.CausesValidation = False
+        Me.ControlBox = False
         Me.Controls.Add(Me.btnlogin)
         Me.Controls.Add(Me.btnclose)
         Me.Controls.Add(Me.textpwd)
         Me.Controls.Add(Me.txtusername)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.PictureBox1)
+        Me.DoubleBuffered = True
+        Me.ForeColor = System.Drawing.Color.Transparent
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
         Me.Name = "Login"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Login"
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.TopMost = True
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents PictureBox1 As System.Windows.Forms.PictureBox
-    Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents txtusername As System.Windows.Forms.TextBox
     Friend WithEvents textpwd As System.Windows.Forms.TextBox
-    Friend WithEvents btnclose As System.Windows.Forms.Button
     Friend WithEvents btnlogin As System.Windows.Forms.Button
+    Friend WithEvents btnclose As System.Windows.Forms.Button
 
 End Class

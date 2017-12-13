@@ -209,6 +209,15 @@
   <ItemGroup>
     <None Include="Resources\if_document-open_118911.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ef8fdd84e730bb53d6195a4b5928fa5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\5ef8fdd84e730bb53d6195a4b5928fa51.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

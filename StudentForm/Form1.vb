@@ -10,7 +10,9 @@ Public Class Login
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Me.btnlogin.Enabled = False
+        'Me.btnlogin.Enabled = False
+        Me.AllowTransparency = True
+        Me.TransparencyKey = BackColor
     End Sub
 
     Private Sub txtusername_KeyDown(sender As Object, e As KeyEventArgs) Handles txtusername.KeyDown

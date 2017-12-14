@@ -109,6 +109,18 @@
     <Compile Include="frmclass.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frmclassafternoon.Designer.vb">
+      <DependentUpon>frmclassafternoon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmclassafternoon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmclassevening.Designer.vb">
+      <DependentUpon>frmclassevening.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmclassevening.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frmclassmornig.Designer.vb">
       <DependentUpon>frmclassmornig.vb</DependentUpon>
     </Compile>
@@ -183,6 +195,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmclass.resx">
       <DependentUpon>frmclass.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclassafternoon.resx">
+      <DependentUpon>frmclassafternoon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmclassevening.resx">
+      <DependentUpon>frmclassevening.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmclassmornig.resx">
       <DependentUpon>frmclassmornig.vb</DependentUpon>
@@ -299,6 +317,21 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\155 [Converted].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ff.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\486.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddddddd.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ddd.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

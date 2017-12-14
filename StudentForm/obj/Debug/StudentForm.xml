@@ -15,7 +15,15 @@ StudentForm
   Overrides the current thread's CurrentUICulture property for all
   resource lookups using this strongly typed resource class.
 </summary>
+</member><member name="P:StudentForm.My.Resources.Resources._155__Converted_">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
 </member><member name="P:StudentForm.My.Resources.Resources._3781">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources._486">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
@@ -28,6 +36,18 @@ StudentForm
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member><member name="P:StudentForm.My.Resources.Resources.clear_information_icon_070831__icons_etc_30">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.ddd">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.ddddddd">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:StudentForm.My.Resources.Resources.ff">
 	<summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

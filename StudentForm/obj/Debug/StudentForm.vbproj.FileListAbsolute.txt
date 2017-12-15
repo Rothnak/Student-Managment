@@ -54,3 +54,38 @@ D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmlvICT
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassmornig.resources
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassafternoon.resources
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassevening.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\StudentForm.exe.config
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.exe
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.pdb
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\StudentForm.exe
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\StudentForm.pdb
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\StudentForm.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\AForge.dll
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\AForge.Video.DirectShow.dll
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\AForge.Video.dll
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.Edm.dll
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.OData.dll
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\System.Spatial.dll
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\AForge.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\AForge.Video.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\AForge.Video.DirectShow.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.Edm.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\Microsoft.Data.OData.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\bin\Debug\System.Spatial.xml
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.vbprojResolveAssemblyReference.cache
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.Camara.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.Login.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclass.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassafternoon.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassevening.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassmornig.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmetc.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmlvICT.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmMain.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmStudentRigitster.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmsubject.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.frmcourse.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.Resources.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.studentlist.resources
+E:\Seng Sourng\Assignment\Student-Managment\StudentForm\obj\Debug\StudentForm.vbproj.GenerateResource.Cache

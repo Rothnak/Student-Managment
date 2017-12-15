@@ -130,10 +130,10 @@
     <value>Khmer OS Muol Pali, 14pt, style=Bold</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>465, 186</value>
+    <value>440, 186</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>232, 63</value>
+    <value>159, 43</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -163,10 +163,10 @@
     <value>Khmer OS Muol Pali, 14pt, style=Bold</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 235</value>
+    <value>466, 235</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>206, 63</value>
+    <value>142, 43</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -193,10 +193,10 @@
     <value>Microsoft Sans Serif, 14pt</value>
   </data>
   <data name="txtusername.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 190</value>
+    <value>636, 190</value>
   </data>
   <data name="txtusername.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 39</value>
+    <value>202, 29</value>
   </data>
   <data name="txtusername.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -220,10 +220,10 @@
     <value>Microsoft Sans Serif, 14pt</value>
   </data>
   <data name="textpwd.Location" type="System.Drawing.Point, System.Drawing">
-    <value>661, 244</value>
+    <value>636, 244</value>
   </data>
   <data name="textpwd.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 39</value>
+    <value>202, 29</value>
   </data>
   <data name="textpwd.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -253,7 +253,7 @@
     <value>Khmer OS Muol Pali, 14pt, style=Bold</value>
   </data>
   <data name="btnlogin.Location" type="System.Drawing.Point, System.Drawing">
-    <value>475, 281</value>
+    <value>450, 281</value>
   </data>
   <data name="btnlogin.Size" type="System.Drawing.Size, System.Drawing">
     <value>157, 50</value>
@@ -292,7 +292,7 @@
     <value>Khmer OS Muol Pali, 14pt, style=Bold</value>
   </data>
   <data name="btnclose.Location" type="System.Drawing.Point, System.Drawing">
-    <value>715, 281</value>
+    <value>690, 281</value>
   </data>
   <data name="btnclose.Size" type="System.Drawing.Size, System.Drawing">
     <value>170, 50</value>
@@ -328,7 +328,7 @@
     <value>Zoom</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1436, 661</value>
+    <value>1386, 661</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

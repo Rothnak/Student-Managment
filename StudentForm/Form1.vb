@@ -1,6 +1,7 @@
 ﻿Imports MySql.Data.MySqlClient
 
 Public Class Login
+    Dim passchar As Boolean = False
 
     Private Sub btnclose_Click(sender As Object, e As EventArgs) Handles btnclose.Click
         Dim a As String = MsgBox("Do you want to close?", vbYesNo)
@@ -73,5 +74,13 @@ Public Class Login
     End Sub
     Private Sub btnlogin_KeyPress(sender As Object, e As KeyPressEventArgs) Handles btnlogin.KeyPress
 
+    End Sub
+
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+        If passchar = True Then
+            Me.textpwd.PasswordChar = "*"
+        Else
+            Me.textpwd.PasswordChar = ""
+        End If
     End Sub
 End Class

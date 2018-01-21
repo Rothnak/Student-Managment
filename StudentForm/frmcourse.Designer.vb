@@ -96,7 +96,7 @@ Partial Class frmcourse
         Me.AutoSize = True
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch
-        Me.ClientSize = New System.Drawing.Size(1470, 576)
+        Me.ClientSize = New System.Drawing.Size(1761, 654)
         Me.Controls.Add(Me.Button5)
         Me.Controls.Add(Me.btnMakarting)
         Me.Controls.Add(Me.btnAirconditioner)

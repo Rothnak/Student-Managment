@@ -44,6 +44,9 @@ Partial Class frmlvICT
         Me.chfname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chId = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.lvICT = New System.Windows.Forms.ListView()
+        Me.chhyear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chhpayment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Image = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ToolStrip1.SuspendLayout()
         Me.st_Menu.SuspendLayout()
         Me.SuspendLayout()
@@ -147,7 +150,7 @@ Partial Class frmlvICT
         '
         'chclass
         '
-        Me.chclass.Text = "Class"
+        Me.chclass.Text = "Shift"
         '
         'chcoruse
         '
@@ -155,11 +158,13 @@ Partial Class frmlvICT
         '
         'chphonenumber
         '
+        Me.chphonenumber.DisplayIndex = 6
         Me.chphonenumber.Text = "PhoneNumber"
         Me.chphonenumber.Width = 130
         '
         'chaddress
         '
+        Me.chaddress.DisplayIndex = 5
         Me.chaddress.Text = "Address"
         Me.chaddress.Width = 180
         '
@@ -195,7 +200,7 @@ Partial Class frmlvICT
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lvICT.BackColor = System.Drawing.Color.White
         Me.lvICT.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lvICT.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chaddress, Me.chphonenumber, Me.chcoruse, Me.chclass})
+        Me.lvICT.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chphonenumber, Me.chaddress, Me.chcoruse, Me.chclass, Me.chhyear, Me.chhpayment, Me.Image})
         Me.lvICT.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvICT.ForeColor = System.Drawing.SystemColors.WindowText
         Me.lvICT.FullRowSelect = True
@@ -205,6 +210,18 @@ Partial Class frmlvICT
         Me.lvICT.TabIndex = 3
         Me.lvICT.UseCompatibleStateImageBehavior = False
         Me.lvICT.View = System.Windows.Forms.View.Details
+        '
+        'chhyear
+        '
+        Me.chhyear.Text = "Year"
+        '
+        'chhpayment
+        '
+        Me.chhpayment.Text = "Payment"
+        '
+        'Image
+        '
+        Me.Image.Text = "Image"
         '
         'frmlvICT
         '
@@ -246,4 +263,7 @@ Partial Class frmlvICT
     Friend WithEvents chfname As System.Windows.Forms.ColumnHeader
     Friend WithEvents chId As System.Windows.Forms.ColumnHeader
     Friend WithEvents lvICT As System.Windows.Forms.ListView
+    Friend WithEvents chhyear As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chhpayment As System.Windows.Forms.ColumnHeader
+    Friend WithEvents Image As System.Windows.Forms.ColumnHeader
 End Class

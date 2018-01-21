@@ -32,9 +32,6 @@ Partial Class frmStudentRigitster
         Me.txtstudentid = New System.Windows.Forms.TextBox()
         Me.txtfname = New System.Windows.Forms.TextBox()
         Me.txtlname = New System.Windows.Forms.TextBox()
-        Me.txtdob = New System.Windows.Forms.TextBox()
-        Me.txtaddress = New System.Windows.Forms.TextBox()
-        Me.txtphonenumber = New System.Windows.Forms.TextBox()
         Me.btncapture = New System.Windows.Forms.Button()
         Me.btnsave = New System.Windows.Forms.Button()
         Me.btnclose = New System.Windows.Forms.Button()
@@ -52,28 +49,39 @@ Partial Class frmStudentRigitster
         Me.Label9 = New System.Windows.Forms.Label()
         Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
         Me.cbocourse = New System.Windows.Forms.ComboBox()
-        Me.cboclass = New System.Windows.Forms.ComboBox()
-        Me.Label10 = New System.Windows.Forms.Label()
+        Me.cboyear = New System.Windows.Forms.ComboBox()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.cboshift = New System.Windows.Forms.ComboBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.cbopayment = New System.Windows.Forms.ComboBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.txtphonenumber = New System.Windows.Forms.MaskedTextBox()
+        Me.txtdob = New System.Windows.Forms.MaskedTextBox()
+        Me.txtaddress = New System.Windows.Forms.TextBox()
         Me.ToolStrip1.SuspendLayout()
         CType(Me.userimage, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
+        Me.Label1.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label1.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.Label1.Font = New System.Drawing.Font("Romnea", 20.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(-1, -2)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(1106, 83)
+        Me.Label1.Size = New System.Drawing.Size(1751, 83)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Rigitster Form"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label2
         '
+        Me.Label2.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(28, 182)
+        Me.Label2.Location = New System.Drawing.Point(28, 199)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(131, 29)
         Me.Label2.TabIndex = 1
@@ -81,9 +89,11 @@ Partial Class frmStudentRigitster
         '
         'Label3
         '
+        Me.Label3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(28, 246)
+        Me.Label3.Location = New System.Drawing.Point(28, 291)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(128, 29)
         Me.Label3.TabIndex = 2
@@ -91,6 +101,8 @@ Partial Class frmStudentRigitster
         '
         'Label4
         '
+        Me.Label4.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(28, 118)
@@ -101,9 +113,11 @@ Partial Class frmStudentRigitster
         '
         'Label5
         '
+        Me.Label5.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(28, 422)
+        Me.Label5.Location = New System.Drawing.Point(28, 630)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(102, 29)
         Me.Label5.TabIndex = 4
@@ -111,9 +125,11 @@ Partial Class frmStudentRigitster
         '
         'Label6
         '
+        Me.Label6.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(28, 483)
+        Me.Label6.Location = New System.Drawing.Point(31, 539)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(176, 29)
         Me.Label6.TabIndex = 5
@@ -121,9 +137,11 @@ Partial Class frmStudentRigitster
         '
         'Label7
         '
+        Me.Label7.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(28, 359)
+        Me.Label7.Location = New System.Drawing.Point(31, 456)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(65, 29)
         Me.Label7.TabIndex = 6
@@ -131,56 +149,39 @@ Partial Class frmStudentRigitster
         '
         'txtstudentid
         '
+        Me.txtstudentid.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtstudentid.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtstudentid.Location = New System.Drawing.Point(218, 118)
+        Me.txtstudentid.Location = New System.Drawing.Point(236, 115)
         Me.txtstudentid.Name = "txtstudentid"
         Me.txtstudentid.Size = New System.Drawing.Size(98, 35)
         Me.txtstudentid.TabIndex = 7
         '
         'txtfname
         '
+        Me.txtfname.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtfname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtfname.Location = New System.Drawing.Point(218, 182)
+        Me.txtfname.Location = New System.Drawing.Point(236, 196)
         Me.txtfname.Name = "txtfname"
         Me.txtfname.Size = New System.Drawing.Size(241, 35)
         Me.txtfname.TabIndex = 8
         '
         'txtlname
         '
+        Me.txtlname.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.txtlname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtlname.Location = New System.Drawing.Point(218, 240)
+        Me.txtlname.Location = New System.Drawing.Point(236, 282)
         Me.txtlname.Name = "txtlname"
         Me.txtlname.Size = New System.Drawing.Size(241, 35)
         Me.txtlname.TabIndex = 9
         '
-        'txtdob
-        '
-        Me.txtdob.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtdob.Location = New System.Drawing.Point(218, 356)
-        Me.txtdob.Name = "txtdob"
-        Me.txtdob.Size = New System.Drawing.Size(241, 35)
-        Me.txtdob.TabIndex = 10
-        '
-        'txtaddress
-        '
-        Me.txtaddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtaddress.Location = New System.Drawing.Point(218, 422)
-        Me.txtaddress.Name = "txtaddress"
-        Me.txtaddress.Size = New System.Drawing.Size(495, 35)
-        Me.txtaddress.TabIndex = 11
-        '
-        'txtphonenumber
-        '
-        Me.txtphonenumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtphonenumber.Location = New System.Drawing.Point(218, 483)
-        Me.txtphonenumber.Name = "txtphonenumber"
-        Me.txtphonenumber.Size = New System.Drawing.Size(241, 35)
-        Me.txtphonenumber.TabIndex = 12
-        '
         'btncapture
         '
+        Me.btncapture.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btncapture.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btncapture.Location = New System.Drawing.Point(964, 347)
+        Me.btncapture.Location = New System.Drawing.Point(1575, 347)
         Me.btncapture.Name = "btncapture"
         Me.btncapture.Size = New System.Drawing.Size(121, 53)
         Me.btncapture.TabIndex = 15
@@ -189,9 +190,9 @@ Partial Class frmStudentRigitster
         '
         'btnsave
         '
-        Me.btnsave.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnsave.Anchor = System.Windows.Forms.AnchorStyles.Bottom
         Me.btnsave.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnsave.Location = New System.Drawing.Point(431, 634)
+        Me.btnsave.Location = New System.Drawing.Point(678, 708)
         Me.btnsave.Name = "btnsave"
         Me.btnsave.Size = New System.Drawing.Size(199, 52)
         Me.btnsave.TabIndex = 16
@@ -200,9 +201,9 @@ Partial Class frmStudentRigitster
         '
         'btnclose
         '
-        Me.btnclose.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnclose.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnclose.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnclose.Location = New System.Drawing.Point(849, 633)
+        Me.btnclose.Location = New System.Drawing.Point(1077, 708)
         Me.btnclose.Name = "btnclose"
         Me.btnclose.Size = New System.Drawing.Size(199, 53)
         Me.btnclose.TabIndex = 17
@@ -211,19 +212,23 @@ Partial Class frmStudentRigitster
         '
         'cbogender
         '
+        Me.cbogender.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.cbogender.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbogender.FormattingEnabled = True
         Me.cbogender.Items.AddRange(New Object() {"Male", "Female"})
-        Me.cbogender.Location = New System.Drawing.Point(218, 300)
+        Me.cbogender.Location = New System.Drawing.Point(236, 365)
         Me.cbogender.Name = "cbogender"
         Me.cbogender.Size = New System.Drawing.Size(121, 37)
         Me.cbogender.TabIndex = 18
         '
         'Label8
         '
+        Me.Label8.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(31, 303)
+        Me.Label8.Location = New System.Drawing.Point(31, 371)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(94, 29)
         Me.Label8.TabIndex = 19
@@ -231,9 +236,9 @@ Partial Class frmStudentRigitster
         '
         'btnnew
         '
-        Me.btnnew.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btnnew.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.btnnew.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnnew.Location = New System.Drawing.Point(33, 634)
+        Me.btnnew.Location = New System.Drawing.Point(278, 708)
         Me.btnnew.Name = "btnnew"
         Me.btnnew.Size = New System.Drawing.Size(199, 52)
         Me.btnnew.TabIndex = 20
@@ -248,9 +253,10 @@ Partial Class frmStudentRigitster
         '
         'lbimage
         '
+        Me.lbimage.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lbimage.AutoSize = True
         Me.lbimage.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbimage.Location = New System.Drawing.Point(871, 421)
+        Me.lbimage.Location = New System.Drawing.Point(1482, 421)
         Me.lbimage.Name = "lbimage"
         Me.lbimage.Size = New System.Drawing.Size(121, 29)
         Me.lbimage.TabIndex = 21
@@ -258,11 +264,11 @@ Partial Class frmStudentRigitster
         '
         'ToolStrip1
         '
-        Me.ToolStrip1.Anchor = CType((System.Windows.Forms.AnchorStyles.Left Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.ToolStrip1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.ToolStrip1.Dock = System.Windows.Forms.DockStyle.None
         Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(32, 32)
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton2, Me.ToolStripTextBox1, Me.txtcurrentuser})
-        Me.ToolStrip1.Location = New System.Drawing.Point(6, 742)
+        Me.ToolStrip1.Location = New System.Drawing.Point(6, 801)
         Me.ToolStrip1.Name = "ToolStrip1"
         Me.ToolStrip1.Size = New System.Drawing.Size(252, 39)
         Me.ToolStrip1.TabIndex = 22
@@ -294,9 +300,10 @@ Partial Class frmStudentRigitster
         '
         'btnselect
         '
+        Me.btnselect.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.btnselect.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnselect.Image = Global.StudentForm.My.Resources.Resources.if_document_open_118911
-        Me.btnselect.Location = New System.Drawing.Point(805, 347)
+        Me.btnselect.Location = New System.Drawing.Point(1416, 347)
         Me.btnselect.Name = "btnselect"
         Me.btnselect.Size = New System.Drawing.Size(121, 53)
         Me.btnselect.TabIndex = 14
@@ -305,9 +312,10 @@ Partial Class frmStudentRigitster
         '
         'userimage
         '
+        Me.userimage.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.userimage.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.userimage.Image = Global.StudentForm.My.Resources.Resources.if_Student_3_379383__1_
-        Me.userimage.Location = New System.Drawing.Point(819, 92)
+        Me.userimage.Location = New System.Drawing.Point(1430, 92)
         Me.userimage.Name = "userimage"
         Me.userimage.Size = New System.Drawing.Size(244, 228)
         Me.userimage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -316,9 +324,11 @@ Partial Class frmStudentRigitster
         '
         'Label9
         '
+        Me.Label9.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(31, 557)
+        Me.Label9.Location = New System.Drawing.Point(845, 118)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(91, 29)
         Me.Label9.TabIndex = 23
@@ -326,33 +336,119 @@ Partial Class frmStudentRigitster
         '
         'cbocourse
         '
+        Me.cbocourse.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.cbocourse.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cbocourse.FormattingEnabled = True
-        Me.cbocourse.Items.AddRange(New Object() {"ICT", "Makarting", "Ari Conditioner", "Electric"})
-        Me.cbocourse.Location = New System.Drawing.Point(218, 549)
+        Me.cbocourse.Location = New System.Drawing.Point(1032, 110)
         Me.cbocourse.Name = "cbocourse"
         Me.cbocourse.Size = New System.Drawing.Size(241, 37)
         Me.cbocourse.TabIndex = 24
         '
-        'cboclass
+        'cboyear
         '
-        Me.cboclass.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cboclass.FormattingEnabled = True
-        Me.cboclass.Items.AddRange(New Object() {"Morning", "Afternoon", "Evening"})
-        Me.cboclass.Location = New System.Drawing.Point(721, 549)
-        Me.cboclass.Name = "cboclass"
-        Me.cboclass.Size = New System.Drawing.Size(241, 37)
-        Me.cboclass.TabIndex = 26
+        Me.cboyear.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cboyear.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboyear.FormattingEnabled = True
+        Me.cboyear.Items.AddRange(New Object() {"Morning", "Afternoon", "Evening"})
+        Me.cboyear.Location = New System.Drawing.Point(1032, 283)
+        Me.cboyear.Name = "cboyear"
+        Me.cboyear.Size = New System.Drawing.Size(241, 37)
+        Me.cboyear.TabIndex = 28
         '
-        'Label10
+        'Label11
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(534, 557)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(73, 29)
-        Me.Label10.TabIndex = 25
-        Me.Label10.Text = "Class"
+        Me.Label11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(845, 291)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(64, 29)
+        Me.Label11.TabIndex = 27
+        Me.Label11.Text = "Year"
+        '
+        'cboshift
+        '
+        Me.cboshift.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cboshift.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cboshift.FormattingEnabled = True
+        Me.cboshift.Items.AddRange(New Object() {"Morning", "Afternoon", "Evening"})
+        Me.cboshift.Location = New System.Drawing.Point(1032, 199)
+        Me.cboshift.Name = "cboshift"
+        Me.cboshift.Size = New System.Drawing.Size(241, 37)
+        Me.cboshift.TabIndex = 30
+        '
+        'Label12
+        '
+        Me.Label12.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(845, 207)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(60, 29)
+        Me.Label12.TabIndex = 29
+        Me.Label12.Text = "Shift"
+        '
+        'cbopayment
+        '
+        Me.cbopayment.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.cbopayment.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cbopayment.FormattingEnabled = True
+        Me.cbopayment.Items.AddRange(New Object() {"Scolaship", "$"})
+        Me.cbopayment.Location = New System.Drawing.Point(1032, 386)
+        Me.cbopayment.Name = "cbopayment"
+        Me.cbopayment.Size = New System.Drawing.Size(241, 37)
+        Me.cbopayment.TabIndex = 32
+        '
+        'Label13
+        '
+        Me.Label13.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Label13.AutoSize = True
+        Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label13.Location = New System.Drawing.Point(845, 394)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(106, 29)
+        Me.Label13.TabIndex = 31
+        Me.Label13.Text = "Payment"
+        '
+        'txtphonenumber
+        '
+        Me.txtphonenumber.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtphonenumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtphonenumber.Location = New System.Drawing.Point(236, 530)
+        Me.txtphonenumber.Mask = "(999) 000-0000"
+        Me.txtphonenumber.Name = "txtphonenumber"
+        Me.txtphonenumber.Size = New System.Drawing.Size(280, 35)
+        Me.txtphonenumber.TabIndex = 33
+        '
+        'txtdob
+        '
+        Me.txtdob.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtdob.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtdob.Location = New System.Drawing.Point(239, 450)
+        Me.txtdob.Mask = "00/00/0000"
+        Me.txtdob.Name = "txtdob"
+        Me.txtdob.Size = New System.Drawing.Size(227, 35)
+        Me.txtdob.TabIndex = 34
+        Me.txtdob.ValidatingType = GetType(Date)
+        '
+        'txtaddress
+        '
+        Me.txtaddress.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
+        Me.txtaddress.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtaddress.Location = New System.Drawing.Point(236, 627)
+        Me.txtaddress.Name = "txtaddress"
+        Me.txtaddress.Size = New System.Drawing.Size(495, 35)
+        Me.txtaddress.TabIndex = 11
         '
         'frmStudentRigitster
         '
@@ -360,9 +456,15 @@ Partial Class frmStudentRigitster
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
         Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
-        Me.ClientSize = New System.Drawing.Size(1137, 781)
-        Me.Controls.Add(Me.cboclass)
-        Me.Controls.Add(Me.Label10)
+        Me.ClientSize = New System.Drawing.Size(1748, 840)
+        Me.Controls.Add(Me.txtdob)
+        Me.Controls.Add(Me.txtphonenumber)
+        Me.Controls.Add(Me.cbopayment)
+        Me.Controls.Add(Me.Label13)
+        Me.Controls.Add(Me.cboshift)
+        Me.Controls.Add(Me.Label12)
+        Me.Controls.Add(Me.cboyear)
+        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.cbocourse)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.ToolStrip1)
@@ -375,9 +477,7 @@ Partial Class frmStudentRigitster
         Me.Controls.Add(Me.btncapture)
         Me.Controls.Add(Me.btnselect)
         Me.Controls.Add(Me.userimage)
-        Me.Controls.Add(Me.txtphonenumber)
         Me.Controls.Add(Me.txtaddress)
-        Me.Controls.Add(Me.txtdob)
         Me.Controls.Add(Me.txtlname)
         Me.Controls.Add(Me.txtfname)
         Me.Controls.Add(Me.txtstudentid)
@@ -391,6 +491,7 @@ Partial Class frmStudentRigitster
         Me.Name = "frmStudentRigitster"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "frmStudentRigitster"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ToolStrip1.ResumeLayout(False)
         Me.ToolStrip1.PerformLayout()
         CType(Me.userimage, System.ComponentModel.ISupportInitialize).EndInit()
@@ -408,9 +509,6 @@ Partial Class frmStudentRigitster
     Friend WithEvents txtstudentid As System.Windows.Forms.TextBox
     Friend WithEvents txtfname As System.Windows.Forms.TextBox
     Friend WithEvents txtlname As System.Windows.Forms.TextBox
-    Friend WithEvents txtdob As System.Windows.Forms.TextBox
-    Friend WithEvents txtaddress As System.Windows.Forms.TextBox
-    Friend WithEvents txtphonenumber As System.Windows.Forms.TextBox
     Friend WithEvents userimage As System.Windows.Forms.PictureBox
     Friend WithEvents btnselect As System.Windows.Forms.Button
     Friend WithEvents btncapture As System.Windows.Forms.Button
@@ -428,6 +526,13 @@ Partial Class frmStudentRigitster
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
     Friend WithEvents cbocourse As System.Windows.Forms.ComboBox
-    Friend WithEvents cboclass As System.Windows.Forms.ComboBox
-    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents cboyear As System.Windows.Forms.ComboBox
+    Friend WithEvents Label11 As System.Windows.Forms.Label
+    Friend WithEvents cboshift As System.Windows.Forms.ComboBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents cbopayment As System.Windows.Forms.ComboBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents txtphonenumber As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txtdob As System.Windows.Forms.MaskedTextBox
+    Friend WithEvents txtaddress As System.Windows.Forms.TextBox
 End Class

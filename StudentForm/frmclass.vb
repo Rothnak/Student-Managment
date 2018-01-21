@@ -1,4 +1,5 @@
-﻿Public Class frmclass
+﻿
+Public Class frmclass
 
     Private Sub btnMoring_Click(sender As Object, e As EventArgs)
         frmclassmornig.Show()
@@ -24,6 +25,10 @@
 
     Private Sub btnclassevening_Click(sender As Object, e As EventArgs) Handles btnclassevening.Click
         frmclassevening.Show()
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
     End Sub
 End Class

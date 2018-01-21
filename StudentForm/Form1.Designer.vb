@@ -30,6 +30,7 @@ Partial Class Login
         Me.btnlogin = New System.Windows.Forms.Button()
         Me.btnclose = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label2
@@ -85,6 +86,13 @@ Partial Class Login
         Me.Button1.Name = "Button1"
         Me.Button1.UseVisualStyleBackColor = False
         '
+        'Button2
+        '
+        Me.Button2.ForeColor = System.Drawing.Color.Black
+        resources.ApplyResources(Me.Button2, "Button2")
+        Me.Button2.Name = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Login
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
@@ -94,6 +102,7 @@ Partial Class Login
         Me.BackgroundImage = Global.StudentForm.My.Resources.Resources._5ef8fdd84e730bb53d6195a4b5928fa5
         Me.CausesValidation = False
         Me.ControlBox = False
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnlogin)
         Me.Controls.Add(Me.btnclose)
@@ -119,5 +128,6 @@ Partial Class Login
     Friend WithEvents btnlogin As System.Windows.Forms.Button
     Friend WithEvents btnclose As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class

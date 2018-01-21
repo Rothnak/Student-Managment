@@ -54,3 +54,5 @@ D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmlvICT
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassmornig.resources
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassafternoon.resources
 D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmclassevening.resources
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frmReport.resources
+D:\Assigment\Vb.net\Student-Managment\StudentForm\obj\Debug\StudentForm.frm_update.resources

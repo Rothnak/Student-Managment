@@ -36,9 +36,11 @@ Partial Class frmclass
         Me.btnclassevening.BackColor = System.Drawing.Color.Transparent
         Me.btnclassevening.BackgroundImage = Global.StudentForm.My.Resources.Resources.ddd
         Me.btnclassevening.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnclassevening.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnclassevening.FlatAppearance.BorderSize = 0
         Me.btnclassevening.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnclassevening.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnclassevening.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnclassevening.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnclassevening.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnclassevening.Location = New System.Drawing.Point(1092, 222)
@@ -57,10 +59,12 @@ Partial Class frmclass
         Me.btnclassafternoon.BackColor = System.Drawing.Color.Transparent
         Me.btnclassafternoon.BackgroundImage = Global.StudentForm.My.Resources.Resources.ddddddd
         Me.btnclassafternoon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnclassafternoon.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnclassafternoon.FlatAppearance.BorderSize = 0
         Me.btnclassafternoon.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
         Me.btnclassafternoon.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnclassafternoon.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnclassafternoon.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnclassafternoon.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnclassafternoon.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnclassafternoon.Location = New System.Drawing.Point(551, 222)
@@ -79,10 +83,12 @@ Partial Class frmclass
         Me.btnclassmorning.BackColor = System.Drawing.Color.Transparent
         Me.btnclassmorning.BackgroundImage = Global.StudentForm.My.Resources.Resources._486
         Me.btnclassmorning.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.btnclassmorning.Cursor = System.Windows.Forms.Cursors.Hand
         Me.btnclassmorning.FlatAppearance.BorderSize = 0
         Me.btnclassmorning.FlatAppearance.CheckedBackColor = System.Drawing.Color.Transparent
         Me.btnclassmorning.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent
         Me.btnclassmorning.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent
+        Me.btnclassmorning.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.btnclassmorning.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.btnclassmorning.ForeColor = System.Drawing.SystemColors.ControlText
         Me.btnclassmorning.Location = New System.Drawing.Point(29, 222)

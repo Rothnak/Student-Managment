@@ -28,8 +28,12 @@ Partial Class studentlist
         Me.chlname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chgender = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chdob = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.chaddress = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chphonenumber = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chaddress = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chcoruse = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chshift = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chyear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chpay = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.st_Menu = New System.Windows.Forms.ToolStrip()
         Me.btnadd = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripSeparator1 = New System.Windows.Forms.ToolStripSeparator()
@@ -42,26 +46,24 @@ Partial Class studentlist
         Me.ToolStripButton6 = New System.Windows.Forms.ToolStripButton()
         Me.ToolStripTextBox1 = New System.Windows.Forms.ToolStripTextBox()
         Me.txtcurrentuser = New System.Windows.Forms.ToolStripTextBox()
-        Me.chcoruse = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.chclass = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chimage = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.st_Menu.SuspendLayout()
         Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'lvUser
         '
-        Me.lvUser.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.lvUser.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.lvUser.BackColor = System.Drawing.Color.White
         Me.lvUser.BorderStyle = System.Windows.Forms.BorderStyle.None
-        Me.lvUser.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chaddress, Me.chphonenumber, Me.chcoruse, Me.chclass})
-        Me.lvUser.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lvUser.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chphonenumber, Me.chaddress, Me.chcoruse, Me.chshift, Me.chyear, Me.chpay, Me.chimage})
+        Me.lvUser.Font = New System.Drawing.Font("Khmer OS Battambang", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvUser.ForeColor = System.Drawing.SystemColors.WindowText
         Me.lvUser.FullRowSelect = True
-        Me.lvUser.Location = New System.Drawing.Point(38, 120)
+        Me.lvUser.Location = New System.Drawing.Point(56, 132)
         Me.lvUser.Name = "lvUser"
-        Me.lvUser.Size = New System.Drawing.Size(1300, 322)
+        Me.lvUser.Size = New System.Drawing.Size(1796, 322)
         Me.lvUser.TabIndex = 0
         Me.lvUser.UseCompatibleStateImageBehavior = False
         Me.lvUser.View = System.Windows.Forms.View.Details
@@ -74,32 +76,54 @@ Partial Class studentlist
         'chfname
         '
         Me.chfname.Text = "Firstname"
-        Me.chfname.Width = 150
+        Me.chfname.Width = 160
         '
         'chlname
         '
         Me.chlname.Text = "Lastname"
-        Me.chlname.Width = 141
+        Me.chlname.Width = 160
         '
         'chgender
         '
         Me.chgender.Text = "Gender"
-        Me.chgender.Width = 114
+        Me.chgender.Width = 90
         '
         'chdob
         '
         Me.chdob.Text = "DOB"
-        Me.chdob.Width = 162
-        '
-        'chaddress
-        '
-        Me.chaddress.Text = "Address"
-        Me.chaddress.Width = 180
+        Me.chdob.Width = 90
         '
         'chphonenumber
         '
+        Me.chphonenumber.DisplayIndex = 6
         Me.chphonenumber.Text = "PhoneNumber"
-        Me.chphonenumber.Width = 130
+        Me.chphonenumber.Width = 160
+        '
+        'chaddress
+        '
+        Me.chaddress.DisplayIndex = 5
+        Me.chaddress.Text = "Address"
+        Me.chaddress.Width = 160
+        '
+        'chcoruse
+        '
+        Me.chcoruse.Text = "Course"
+        Me.chcoruse.Width = 90
+        '
+        'chshift
+        '
+        Me.chshift.Text = "Shift"
+        Me.chshift.Width = 90
+        '
+        'chyear
+        '
+        Me.chyear.Text = "Years"
+        Me.chyear.Width = 90
+        '
+        'chpay
+        '
+        Me.chpay.Text = "Payment"
+        Me.chpay.Width = 90
         '
         'st_Menu
         '
@@ -108,7 +132,7 @@ Partial Class studentlist
         Me.st_Menu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.btnadd, Me.ToolStripSeparator1, Me.btnupdate, Me.ToolStripSeparator2, Me.btndelete, Me.ToolStripSeparator3, Me.btnclose})
         Me.st_Menu.Location = New System.Drawing.Point(0, 0)
         Me.st_Menu.Name = "st_Menu"
-        Me.st_Menu.Size = New System.Drawing.Size(1397, 82)
+        Me.st_Menu.Size = New System.Drawing.Size(1892, 82)
         Me.st_Menu.TabIndex = 1
         Me.st_Menu.Text = "ToolStrip Menu"
         '
@@ -170,7 +194,7 @@ Partial Class studentlist
         Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripButton6, Me.ToolStripTextBox1, Me.txtcurrentuser})
         Me.ToolStrip1.Location = New System.Drawing.Point(0, 504)
         Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1397, 39)
+        Me.ToolStrip1.Size = New System.Drawing.Size(1892, 39)
         Me.ToolStrip1.TabIndex = 2
         Me.ToolStrip1.Text = "ToolStrip1"
         '
@@ -198,24 +222,21 @@ Partial Class studentlist
         Me.txtcurrentuser.Name = "txtcurrentuser"
         Me.txtcurrentuser.Size = New System.Drawing.Size(100, 39)
         '
-        'chcoruse
+        'chimage
         '
-        Me.chcoruse.Text = "Course"
-        '
-        'chclass
-        '
-        Me.chclass.Text = "Class"
+        Me.chimage.Text = "Image"
         '
         'studentlist
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1397, 543)
+        Me.ClientSize = New System.Drawing.Size(1892, 543)
         Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.st_Menu)
         Me.Controls.Add(Me.lvUser)
         Me.Name = "studentlist"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "studentlist"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.st_Menu.ResumeLayout(False)
@@ -247,5 +268,8 @@ Partial Class studentlist
     Friend WithEvents ToolStripTextBox1 As System.Windows.Forms.ToolStripTextBox
     Friend WithEvents txtcurrentuser As System.Windows.Forms.ToolStripTextBox
     Friend WithEvents chcoruse As System.Windows.Forms.ColumnHeader
-    Friend WithEvents chclass As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chshift As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chyear As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chpay As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chimage As System.Windows.Forms.ColumnHeader
 End Class

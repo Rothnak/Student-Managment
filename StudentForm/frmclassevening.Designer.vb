@@ -29,9 +29,12 @@ Partial Class frmclassevening
         Me.chlname = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chgender = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chdob = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.chaddress = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chphonenumber = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chaddress = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.chcoruse = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chshift = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chyear = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.chpayment = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
         'Label1
@@ -40,7 +43,7 @@ Partial Class frmclassevening
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
         Me.Label1.Font = New System.Drawing.Font("Khmer OS Muol Light", 26.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(558, 55)
+        Me.Label1.Location = New System.Drawing.Point(616, 55)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(277, 93)
         Me.Label1.TabIndex = 4
@@ -52,64 +55,79 @@ Partial Class frmclassevening
             Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.lvclassevening.BackColor = System.Drawing.Color.White
-        Me.lvclassevening.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chaddress, Me.chphonenumber, Me.chcoruse})
-        Me.lvclassevening.Font = New System.Drawing.Font("Khmer OS Battambang", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lvclassevening.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.chId, Me.chfname, Me.chlname, Me.chgender, Me.chdob, Me.chphonenumber, Me.chaddress, Me.chcoruse, Me.chshift, Me.chyear, Me.chpayment})
+        Me.lvclassevening.Font = New System.Drawing.Font("Khmer OS Battambang", 11.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lvclassevening.ForeColor = System.Drawing.SystemColors.WindowText
         Me.lvclassevening.FullRowSelect = True
-        Me.lvclassevening.Location = New System.Drawing.Point(16, 198)
+        Me.lvclassevening.Location = New System.Drawing.Point(22, 151)
         Me.lvclassevening.Name = "lvclassevening"
-        Me.lvclassevening.Size = New System.Drawing.Size(1333, 341)
-        Me.lvclassevening.TabIndex = 3
+        Me.lvclassevening.Size = New System.Drawing.Size(1416, 296)
+        Me.lvclassevening.TabIndex = 6
         Me.lvclassevening.UseCompatibleStateImageBehavior = False
         Me.lvclassevening.View = System.Windows.Forms.View.Details
         '
         'chId
         '
         Me.chId.Text = "ល.រ​ សិស្ស"
-        Me.chId.Width = 125
+        Me.chId.Width = 100
         '
         'chfname
         '
         Me.chfname.Text = "ត្រកូល"
-        Me.chfname.Width = 150
+        Me.chfname.Width = 110
         '
         'chlname
         '
         Me.chlname.Text = "ឈ្មោះ"
-        Me.chlname.Width = 154
+        Me.chlname.Width = 110
         '
         'chgender
         '
         Me.chgender.Text = "ភេទ"
-        Me.chgender.Width = 85
+        Me.chgender.Width = 90
         '
         'chdob
         '
         Me.chdob.Text = "ថ្ងៃខែឆ្នាំកំណើត"
-        Me.chdob.Width = 185
-        '
-        'chaddress
-        '
-        Me.chaddress.Text = "អាស័យដ្ធាន"
-        Me.chaddress.Width = 180
+        Me.chdob.Width = 160
         '
         'chphonenumber
         '
         Me.chphonenumber.Text = "លេខទូរស័ព្ទ"
-        Me.chphonenumber.Width = 200
+        Me.chphonenumber.Width = 100
+        '
+        'chaddress
+        '
+        Me.chaddress.Text = "អាស័យដ្ធាន"
+        Me.chaddress.Width = 160
         '
         'chcoruse
         '
         Me.chcoruse.Text = "ជំនាញ"
-        Me.chcoruse.Width = 119
+        Me.chcoruse.Width = 90
+        '
+        'chshift
+        '
+        Me.chshift.Text = "Shift"
+        Me.chshift.Width = 90
+        '
+        'chyear
+        '
+        Me.chyear.Text = "ឆ្នាំ"
+        Me.chyear.Width = 101
+        '
+        'chpayment
+        '
+        Me.chpayment.Text = "Payment"
+        Me.chpayment.Width = 144
         '
         'frmclassevening
         '
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(1365, 687)
-        Me.Controls.Add(Me.Label1)
+        Me.ClientSize = New System.Drawing.Size(1480, 543)
         Me.Controls.Add(Me.lvclassevening)
+        Me.Controls.Add(Me.Label1)
         Me.Name = "frmclassevening"
         Me.Text = "frmclassevening"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
@@ -124,7 +142,10 @@ Partial Class frmclassevening
     Friend WithEvents chlname As System.Windows.Forms.ColumnHeader
     Friend WithEvents chgender As System.Windows.Forms.ColumnHeader
     Friend WithEvents chdob As System.Windows.Forms.ColumnHeader
-    Friend WithEvents chaddress As System.Windows.Forms.ColumnHeader
     Friend WithEvents chphonenumber As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chaddress As System.Windows.Forms.ColumnHeader
     Friend WithEvents chcoruse As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chshift As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chyear As System.Windows.Forms.ColumnHeader
+    Friend WithEvents chpayment As System.Windows.Forms.ColumnHeader
 End Class
